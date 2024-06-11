@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supraja Personal Portfolio Website</title>
+    <link rel="icon" type="image/png" href="supraja.jpg">
+    
+    <link rel="stylesheet" href="style.css">
+    <!-- Add Font Awesome CSS -->
+    <script src="https://kit.fontawesome.com/f49cba0c4a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="container">
+            <div id="brand">Supraja Kamineni</div>
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+    <div class="header-content">
+        <div class="container">
+            <div class="header-text">
+                <p>UI/UX Designer and Java Developer</p>
+                <h1>Hi, I'm Supraja Kamineni from India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="supraja.jpg" alt="Supraja's Photo" class="profile-img">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate UI/UX Designer and Java Developer based in India. With a strong background in both design and development, I create innovative solutions that enhance user experience.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android apps</li>
+                            <li><span>Java Developer</span><br>Backend codding</li>
+                            <li><span>SQL</span><br>Database purpose</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web Development intern</span><br>Designing Web Development interface</li>
+                            <li><span>Smart Voting System Using Facial Recognition
+                            </span><br>We design online Voting system</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B. Tech (Computer Science Engineering)</span><br>2019- 2023</li>
+                            <li><span>Intermediate - MPC </span><br>2017-2019</li>
+                            <li><span>AP SSC</span><br>2016-2017</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Projects -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <h2>Mass Mail Dispatcher</h2>
+            <p>Bulk mailing refers to managing and sending large quantities of mail at reduced
+                rates. So, it's an incredibly useful tool for any business looking to expand and reach
+                new customers, whilst keeping costs as low as possible.</p>
+            <a href="#" class="btn btn2">Learn More</a></div>
+
+            <div><h2>Smart Voting System Using Facial Recognition</h2>
+                <p>We proposed a digital voting system through facial recognition. This model has
+                    three levels of verification:Unique number verification ; Voter card number ; Uses various algorithms for
+                    facial recognition</p>
+                <a href="#" class="btn btn2">Learn More</a></div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="massmail.jpg" class="move-icon">
+            </div>
+            <div class="work">
+                <img src="smartvottingthroughfacial.jpeg" class="move-icon1">
+            </div>
+            <div class="see-more">
+                <a href="#" class="btn">See More</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>0123456789</p>
+                <div class="social-icons">
+                    <!-- Add Font Awesome classes -->
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/supraja-kamineni/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/supraja-kamineni"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="Supraja_K_Graduate_Hire_Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required><br>
+                    <input type="email" name="Email" placeholder="Your Email" required><br>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea><br>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2024 Supraja Kamineni. All rights reserved. This portfolio is the intellectual property of Supraja Kamineni, and may not be used, reproduced, or distributed without permission.</p>
+    </div>
+</div>
+    <script>
+        var tablinks =document.getElementsByClassName("tab-links");
+        var tabcontents =document.getElementsByClassName("tab-contents");
+
+        function opentab(tabName){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu =  document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxpA6Zqqo3c7XQm1nxQzzT8fOHsMnYHuJ9FiPR4qFD1Aj2gFmt__LeZKAVh2BB_Lt9Y9A/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg =document.getElementById("msg");
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent succesfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },3000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
